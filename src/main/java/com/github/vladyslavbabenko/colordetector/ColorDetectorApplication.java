@@ -1,6 +1,6 @@
 package com.github.vladyslavbabenko.colordetector;
 
-import com.github.vladyslavbabenko.colordetector.JavaFX.JavaFxApplication;
+import com.github.vladyslavbabenko.colordetector.javafx.JavaFxApplication;
 import javafx.application.Application;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

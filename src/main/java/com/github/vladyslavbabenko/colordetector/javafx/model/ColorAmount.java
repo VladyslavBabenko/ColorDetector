@@ -1,4 +1,4 @@
-package com.github.vladyslavbabenko.colordetector.JavaFX.model;
+package com.github.vladyslavbabenko.colordetector.javafx.model;
 
 import javafx.scene.paint.Color;
 import lombok.Data;
