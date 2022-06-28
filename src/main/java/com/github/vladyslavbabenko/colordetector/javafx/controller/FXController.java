@@ -1,4 +1,4 @@
-package com.github.vladyslavbabenko.colordetector.JavaFX.Controller;
+package com.github.vladyslavbabenko.colordetector.javafx.controller;
 
 import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.stereotype.Component;

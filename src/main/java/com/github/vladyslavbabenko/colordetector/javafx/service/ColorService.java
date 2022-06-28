@@ -1,4 +1,4 @@
-package com.github.vladyslavbabenko.colordetector.JavaFX.Service;
+package com.github.vladyslavbabenko.colordetector.javafx.service;
 
 import org.springframework.stereotype.Service;
 
