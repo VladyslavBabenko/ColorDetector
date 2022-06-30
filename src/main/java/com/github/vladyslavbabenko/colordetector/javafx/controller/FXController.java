@@ -54,6 +54,9 @@ public class FXController implements Initializable {
      * Runs all the necessary methods to start the application
      */
     public void start() {
+        if (imageView.getImage() != null) {
+            resetAll();
+        }
         chooseImage();
         calcColorPickerAmount(colorService.getSortedEntryArrayList().size());
         setUpGridPane();
