@@ -1,6 +1,6 @@
 package com.github.vladyslavbabenko.colordetector.javafx.controller;
 
-import com.github.vladyslavbabenko.colordetector.service.ColorServiceImpl;
+import com.github.vladyslavbabenko.colordetector.service.ColorService;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.HPos;
@@ -25,7 +25,7 @@ import java.util.ResourceBundle;
 @FxmlView("GUI.fxml")
 public class FXController implements Initializable {
 
-    private final ColorServiceImpl colorService;
+    private final ColorService colorService;
     private final GridPane gridPane = new GridPane();
     int colorPickerAmount;
 
@@ -39,7 +39,7 @@ public class FXController implements Initializable {
     private Label totalPixels;
 
     @Autowired
-    public FXController(ColorServiceImpl colorService) {
+    public FXController(ColorService colorService) {
         this.colorService = colorService;
     }
 

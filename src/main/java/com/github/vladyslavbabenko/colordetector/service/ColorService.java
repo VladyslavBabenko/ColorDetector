@@ -2,20 +2,17 @@ package com.github.vladyslavbabenko.colordetector.service;
 
 import com.github.vladyslavbabenko.colordetector.enums.ImageExtension;
 import javafx.scene.image.Image;
+import javafx.scene.image.PixelReader;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.springframework.stereotype.Service;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-public class ColorServiceImpl {
+public class ColorService {
     private Image image;
     private int width, height;
     private List<Map.Entry<Color, Integer>> entryArrayList;
@@ -48,22 +45,11 @@ public class ColorServiceImpl {
      */
     private Color[] detectColor(Color[] imagePixels) {
         int index = 0;
-        int buff;
-        double red, green, blue;
-        try {
-            BufferedImage bufferedImage = ImageIO.read(new File(image.getUrl()));
-            for (int x = 0; x < width; x++) {
-                for (int y = 0; y < height; y++) {
-                    buff = bufferedImage.getRGB(x, y);
-                    red = ((buff & 0x00ff0000) >> 16) / 255.0;
-                    green = ((buff & 0x0000ff00) >> 8) / 255.0;
-                    blue = (buff & 0x000000ff) / 255.0;
-
-                    imagePixels[index++] = new Color(red, green, blue, 1.0);
-                }
+        PixelReader pixelReader = image.getPixelReader();
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                imagePixels[index++] = pixelReader.getColor(x, y);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
 
         return imagePixels;
