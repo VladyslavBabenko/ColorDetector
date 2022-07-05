@@ -105,7 +105,7 @@
                     <Insets bottom="10.0"/>
                 </padding>
                 <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                        mnemonicParsing="false" onAction="#start" prefHeight="30.0" text="Load Image"
+                        mnemonicParsing="false" onAction="#start" prefHeight="30.0" text="Select an image"
                         textAlignment="CENTER">
                     <font>
                         <Font name="Calibri Bold" size="14.0"/>
