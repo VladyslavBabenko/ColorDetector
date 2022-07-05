@@ -62,6 +62,7 @@ public class FXController implements Initializable {
         setUpGridPane();
         totalPixels.setText("Total pixels: " + colorService.getTotalPixels());
         createColorPicker(colorPickerAmount);
+        colorPickerAmountSlider.setValue(colorPickerAmount);
     }
 
     /**
@@ -127,6 +128,7 @@ public class FXController implements Initializable {
         imageView.setImage(null);
         totalPixels.setText("Total pixels: 0");
         colorService.resetAll();
+        colorPickerAmountSlider.setValue(colorPickerAmountSlider.getMin());
     }
 
     /**
