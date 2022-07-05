@@ -10,56 +10,51 @@
 <AnchorPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.github.vladyslavbabenko.colordetector.javafx.controller.FXController">
     <HBox alignment="CENTER_RIGHT">
-        <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-              prefWidth="400.0">
+        <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
             <padding>
                 <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
             </padding>
-            <ImageView fx:id="imageView" fitHeight="370.0" fitWidth="370.0" pickOnBounds="true"
-                       preserveRatio="true" VBox.vgrow="ALWAYS"/>
+            <ImageView fx:id="imageView" fitHeight="370.0" fitWidth="370.0" pickOnBounds="true" preserveRatio="true"
+                       VBox.vgrow="ALWAYS"/>
         </VBox>
         <Line endX="-150.0" endY="420.0" startX="-150.0"/>
         <VBox prefWidth="200.0">
             <VBox alignment="CENTER">
                 <HBox alignment="CENTER" prefWidth="200.0">
-                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
-                          minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
-                          prefWidth="35.0">
+                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="30.0" prefWidth="35.0">
                         <padding>
                             <Insets bottom="5.0" top="5.0"/>
                         </padding>
-                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                               minWidth="-Infinity" text="№" textAlignment="CENTER">
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               text="№" textAlignment="CENTER">
                             <font>
                                 <Font name="Calibri Bold" size="14.0"/>
                             </font>
                         </Label>
                     </HBox>
-                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
-                          minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
-                          prefWidth="100.0">
+                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
                         <padding>
                             <Insets bottom="5.0" top="5.0"/>
                         </padding>
-                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                               minWidth="-Infinity" text="Color" textAlignment="CENTER"
-                               HBox.hgrow="ALWAYS">
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               text="Color" textAlignment="CENTER" HBox.hgrow="ALWAYS">
                             <font>
                                 <Font name="Calibri Bold" size="14.0"/>
                             </font>
                         </Label>
                     </HBox>
-                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
-                          minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
-                          prefWidth="40.0">
+                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="30.0" prefWidth="40.0">
                         <padding>
                             <Insets bottom="5.0" top="5.0"/>
                         </padding>
                         <HBox.margin>
                             <Insets right="15.0"/>
                         </HBox.margin>
-                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                               minWidth="-Infinity" text="\%" textAlignment="CENTER">
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                               text="\%" textAlignment="CENTER">
                             <font>
                                 <Font name="Calibri Bold" size="14.0"/>
                             </font>
@@ -73,10 +68,9 @@
             <Line endX="50.0" startX="-150.0"/>
             <HBox alignment="CENTER_LEFT" prefHeight="40.0">
                 <VBox>
-                    <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
-                            minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
-                            onAction="#resetAll" prefHeight="40.0" prefWidth="40.0"
-                            style="-fx-background-color: #dd4545;" text="X" textAlignment="CENTER"
+                    <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                            minWidth="-Infinity" mnemonicParsing="false" onAction="#resetAll" prefHeight="40.0"
+                            prefWidth="40.0" style="-fx-background-color: #dd4545;" text="X" textAlignment="CENTER"
                             textFill="WHITE">
                         <font>
                             <Font name="Calibri Bold" size="15.0"/>
@@ -90,34 +84,29 @@
                     <padding>
                         <Insets left="10.0" right="10.0" top="10.0"/>
                     </padding>
-                    <Slider fx:id="colorPickerAmountSlider" blockIncrement="1.0"
-                            majorTickUnit="499.0" max="1000.0" maxHeight="40.0" min="1.0"
-                            minorTickCount="50" onDragDetected="#resetColorPickers"
-                            onMouseDragReleased="#resetColorPickers" showTickLabels="true"
-                            snapToTicks="true">
+                    <Slider fx:id="colorPickerAmountSlider" blockIncrement="1.0" majorTickUnit="499.0" max="1000.0"
+                            maxHeight="40.0" min="1.0" minorTickCount="50" onDragDetected="#resetColorPickers"
+                            onMouseDragReleased="#resetColorPickers" showTickLabels="true" snapToTicks="true">
                         <cursor>
                             <Cursor fx:constant="HAND"/>
                         </cursor>
                     </Slider>
                 </VBox>
             </HBox>
-            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0"
-                  prefWidth="200.0">
-                <Label fx:id="totalPixels" alignment="CENTER" text="Total pixels: 0"
-                       textAlignment="CENTER">
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="200.0">
+                <Label fx:id="totalPixels" alignment="CENTER" text="Total pixels: 0" textAlignment="CENTER">
                     <font>
                         <Font name="Calibri Bold" size="14.0"/>
                     </font>
                 </Label>
             </HBox>
-            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0"
-                  prefWidth="200.0">
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="200.0">
                 <padding>
                     <Insets bottom="10.0"/>
                 </padding>
-                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" onAction="#start" prefHeight="30.0"
-                        text="Upload Image" textAlignment="CENTER">
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        mnemonicParsing="false" onAction="#start" prefHeight="30.0" text="Select an image"
+                        textAlignment="CENTER">
                     <font>
                         <Font name="Calibri Bold" size="14.0"/>
                     </font>
