@@ -27,7 +27,7 @@ public class FXController implements Initializable {
 
     private final ColorService colorService;
     private final GridPane gridPane = new GridPane();
-    int colorPickerAmount;
+    private int colorPickerAmount;
 
     @FXML
     private ImageView imageView;
