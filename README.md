@@ -1,4 +1,6 @@
 # ColorDetector
+## GUI
+![ColorDetector.png](ColorDetector.png)
 ## Idea
   The main idea is to analyze the input image to get information about the colors and their amount in % in this image
 ##  MVP Scope
